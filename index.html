@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta del Bar</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header con logo -->
+    <header>
+        <div class="logo-container">
+            <img src="assets/images/logo.png" alt="Logo del Bar" id="logo">
+        </div>
+        <div class="language-selector">
+            <button class="lang-btn" data-lang="es">ES</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+        </div>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <!-- Menú de navegación para categorías -->
+    <nav class="category-nav">
+        <ul>
+            <li data-category="desayunos"><i class="fas fa-coffee"></i> <span class="lang-es">Desayunos</span><span class="lang-en">Breakfast</span><span class="lang-fr">Petit-déjeuner</span></li>
+            <li data-category="bocadillos"><i class="fas fa-bread-slice"></i> <span class="lang-es">Bocadillos</span><span class="lang-en">Sandwiches</span><span class="lang-fr">Sandwichs</span></li>
+            <li data-category="croquetas"><i class="fas fa-cheese"></i> <span class="lang-es">Croquetas</span><span class="lang-en">Croquettes</span><span class="lang-fr">Croquettes</span></li>
+            <li data-category="especiales"><i class="fas fa-star"></i> <span class="lang-es">Especiales</span><span class="lang-en">Specials</span><span class="lang-fr">Spécialités</span></li>
+            <li data-category="postres"><i class="fas fa-ice-cream"></i> <span class="lang-es">Postres</span><span class="lang-en">Desserts</span><span class="lang-fr">Desserts</span></li>
+            <li data-category="tablas"><i class="fas fa-utensils"></i> <span class="lang-es">Tablas</span><span class="lang-en">Platters</span><span class="lang-fr">Planches</span></li>
+            <li data-category="tapas-mes"><i class="fas fa-calendar-alt"></i> <span class="lang-es">Tapas del Mes</span><span class="lang-en">Tapas of the Month</span><span class="lang-fr">Tapas du Mois</span></li>
+            <li data-category="torradas"><i class="fas fa-bread-slice"></i> <span class="lang-es">Torradas</span><span class="lang-en">Toast</span><span class="lang-fr">Toasts</span></li>
+            <li data-category="vermuts"><i class="fas fa-glass-martini-alt"></i> <span class="lang-es">Vermuts</span><span class="lang-en">Vermouths</span><span class="lang-fr">Vermouths</span></li>
+            <li data-category="tapas"><i class="fas fa-pepper-hot"></i> <span class="lang-es">Tapas</span><span class="lang-en">Tapas</span><span class="lang-fr">Tapas</span></li>
+            <li data-category="vinos"><i class="fas fa-wine-glass-alt"></i> <span class="lang-es">Vinos</span><span class="lang-en">Wines</span><span class="lang-fr">Vins</span></li>
+        </ul>
+    </nav>
+
+    <!-- Contenedor principal para los productos -->
+    <main class="products-container">
+        <!-- Los productos se cargarán dinámicamente aquí -->
+    </main>
+
+    <!-- Modal para sugerencias -->
+    <div class="modal-overlay" id="suggestionsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><span class="lang-es">Sugerencias del Chef</span><span class="lang-en">Chef's Suggestions</span><span class="lang-fr">Suggestions du Chef</span></h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <!-- Las sugerencias se cargarán dinámicamente aquí -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón para volver arriba -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 <span class="lang-es">Carta del Bar</span><span class="lang-en">Bar Menu</span><span class="lang-fr">Menu du Bar</span></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/content-management.js"></script>
+</body>
+</html>
